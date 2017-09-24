@@ -6,7 +6,7 @@
     <title>Randomizer</title>
     <authors>Jason Conner</authors>
     <owners>Jason Conner</owners>
-    <licenseUrl>https://github.com/jrconner384/Randomizer/tree/master#license</licenseUrl>
+    <licenseUrl>https://github.com/jrconner384/Randomizer#license</licenseUrl>
     <projectUrl>https://github.com/jrconner384/Randomizer</projectUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>Tools for randomizing certain data.</description>
