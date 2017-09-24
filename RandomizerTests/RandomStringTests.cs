@@ -52,5 +52,17 @@ namespace RandomizerTests
                 Assert.AreEqual(i, punctuation.Length, "The randomized punctuation string did not contain the expected number of characters.");
             }
         }
+
+        [TestMethod]
+        public void NumberOfLength_CreatesOnlyNumericalValues()
+        {
+            for (int i = 0; i < sampleSize; i++)
+            {
+                Regex digits = new Regex($@"\d{{{i}}}");
+                string number = RandomString.NumberOfLength(i);
+
+                StringAssert.Matches(number, digits);
+            }
+        }
     }
 }

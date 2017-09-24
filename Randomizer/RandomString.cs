@@ -4,6 +4,9 @@ using Randomizer.Infrastructure;
 
 namespace Randomizer
 {
+    /// <summary>
+    /// Randomizes strings according to specified criteria or using some conventional assumptions.
+    /// </summary>
     public static class RandomString
     {
         private static readonly Random rand;
@@ -45,6 +48,22 @@ namespace Randomizer
             }
 
             return randomStr.ToString();
+        }
+
+        /// <summary>
+        /// Randomizes a natural number of the specified <paramref name="length"/>.
+        /// </summary>
+        /// <param name="length">The length of the randomized number.</param>
+        /// <returns>A randomized natural number of the specified length.</returns>
+        /// <remarks>
+        /// Aside from returning a string and not a numerical type, the only functional difference between this and
+        /// using something like <seealso cref="Random.Next(int)"/> is that this method can return values with leading
+        /// zeroes. Use this, for example, if you want a chance of getting a value like "001" instead of an <c>int</c>
+        /// 1.
+        /// </remarks>
+        public static string NumberOfLength(int length)
+        {
+            return OfLength(length, CharacterSets.DIGITS);
         }
     }
 }
