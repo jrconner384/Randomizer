@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Randomizer</id>
+    <version>0.0.1</version>
+    <title>Randomizer</title>
+    <authors>Jason Conner</authors>
+    <owners>Jason Conner</owners>
+    <licenseUrl>https://github.com/jrconner384/Randomizer/tree/master#license</licenseUrl>
+    <projectUrl>https://github.com/jrconner384/Randomizer</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Tools for randomizing certain data.</description>
+    <releaseNotes>A couple of simple randomizers for strings and one specialized randomizer for NA-style phone numbers.</releaseNotes>
+    <copyright>Copyright 2017 Jason Conner</copyright>
+    <tags>Tools Random</tags>
+  </metadata>
+</package>
